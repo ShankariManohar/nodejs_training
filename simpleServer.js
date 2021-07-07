@@ -6,4 +6,4 @@ http.createServer(function (req, res) {
   console.log("testing");
   res.end(); //end the response
 
-}).listen(8080); //the server object listens on port 8080
+}).listen(3000); //the server object listens on port 8080

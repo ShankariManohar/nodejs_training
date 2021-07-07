@@ -8,10 +8,16 @@ var fs = require('fs');
 //     console.log(data)
 // });
 
-fs.readFile('readme.txt', 'utf8', function(err, data){
-    fs.writeFile('writemeee.txt', data, function(err, result) {
+// fs.readFile('readme.txt', 'utf8', function(err, data){
+//     fs.writeFile('writemeee.txt', data, function(err, result) {
 
-        if (err) console.log('error', err);
+//         if (err) console.log('error', err);
 
-    });
+//     });
+// });
+
+fs.unlink('writemeee.txt',function(err){
+    if(err) {
+        return console.log("Delete error: " + err);
+    }
 });
